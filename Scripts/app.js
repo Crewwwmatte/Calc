@@ -5,3 +5,11 @@
 // }
 //
 // stringHandler('Harley davidson')
+
+const plus = document.querySelector('#plus')
+
+function plusHandler() {
+    console.log(28+49)
+}
+
+plus.addEventListener('click', plusHandler)
