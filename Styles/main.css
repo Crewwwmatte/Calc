@@ -28,11 +28,12 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 10px;
+    margin: 10px 0;
     max-width: 300px;
 }
 
 .calc_btn {
+    align-items: center;
     background: red;
     width: 80px;
     border-radius: 5px;
@@ -40,4 +41,5 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }

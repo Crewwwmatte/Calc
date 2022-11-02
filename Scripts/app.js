@@ -1,18 +1,45 @@
 // console.log('Yo')
 
-function stringHandler(word) {
-    console.log(word.replace(function(a) {return a.toUpperCase()}))
-}
+// function stringHandler(word) {
+//     console.log(word.replace(function(a) {return a.toUpperCase()}))
+// }
 
-stringHandler('Harley davidson')
+// stringHandler('Harley davidson')
+
+const zero = document.querySelector('#0')
+const one = document.getElementById(1)
+const two = document.querySelector('#two')
+const three = document.querySelector('#3')
+// const four = document.querySelector('#4')
+// const five = document.querySelector('#5')
+// const six = document.querySelector('#6')
+// const seven = document.querySelector('#7')
+// const eight = document.querySelector('#8')
+// const nine = document.querySelector('#9')
 
 const plus = document.querySelector('#plus')
+const minus = document.querySelector('#minus')
+const multiply = document.querySelector('#mult')
+const del = document.querySelector('#razdel')
 
-function plusHandler() {
-    console.log(28+49)
+zero.addEventListener('click', e => {
+    console.log(e.target.innerHTML)
+})
+
+one.addEventListener('click', (e) => {
+    console.log(e.target)
+})
+
+two.addEventListener('click', (e) => {
+    console.log(e.target)
+})
+
+
+function print() {
+    this.addEventListener('click', () => {
+
+    })
 }
-
-plus.addEventListener('click', plusHandler)
 
 function spl(word) {
     let result = word.split('')
