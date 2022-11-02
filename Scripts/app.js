@@ -9,7 +9,7 @@
 const zero = document.querySelector('#0')
 const one = document.getElementById(1)
 const two = document.querySelector('#two')
-const three = document.querySelector('#3')
+const three = document.getElementById('#3')
 // const four = document.querySelector('#4')
 // const five = document.querySelector('#5')
 // const six = document.querySelector('#6')
