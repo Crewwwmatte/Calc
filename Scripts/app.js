@@ -6,38 +6,75 @@
 
 // stringHandler('Harley davidson')
 
-const zero = document.querySelector('#0')
-const one = document.getElementById(1)
+const screen = document.querySelector('.calc_screen')
+
+const zero = document.querySelector('#zero')
+const one = document.querySelector('#one')
 const two = document.querySelector('#two')
-const three = document.getElementById('#3')
-// const four = document.querySelector('#4')
-// const five = document.querySelector('#5')
-// const six = document.querySelector('#6')
-// const seven = document.querySelector('#7')
-// const eight = document.querySelector('#8')
-// const nine = document.querySelector('#9')
+const three = document.querySelector('#three')
+const four = document.querySelector('#four')
+const five = document.querySelector('#five')
+const six = document.querySelector('#six')
+const seven = document.querySelector('#seven')
+const eight = document.querySelector('#eight')
+const nine = document.querySelector('#nine')
 
 const plus = document.querySelector('#plus')
 const minus = document.querySelector('#minus')
 const multiply = document.querySelector('#mult')
 const del = document.querySelector('#razdel')
+const clear = document.querySelector('#clear')
 
-zero.addEventListener('click', e => {
-    console.log(e.target.innerHTML)
+zero.addEventListener('click', (e) => {
+    screen.insertAdjacentHTML("beforeend", e.target.innerHTML)
 })
 
 one.addEventListener('click', (e) => {
-    console.log(e.target)
+    screen.insertAdjacentHTML("beforeend", e.target.innerHTML)
 })
 
 two.addEventListener('click', (e) => {
-    console.log(e.target)
+    screen.insertAdjacentHTML("beforeend", e.target.innerHTML)
+})
+
+three.addEventListener('click', (e) => {
+    screen.insertAdjacentHTML("beforeend", e.target.innerHTML)
+})
+
+four.addEventListener('click', (e) => {
+    screen.insertAdjacentHTML("beforeend", e.target.innerHTML)
+})
+
+five.addEventListener('click', (e) => {
+    screen.insertAdjacentHTML("beforeend", e.target.innerHTML)
+})
+
+six.addEventListener('click', (e) => {
+    screen.insertAdjacentHTML("beforeend", e.target.innerHTML)
+})
+
+seven.addEventListener('click', (e) => {
+    screen.insertAdjacentHTML("beforeend", e.target.innerHTML)
+})
+
+eight.addEventListener('click', (e) => {
+    screen.insertAdjacentHTML("beforeend", e.target.innerHTML)
+})
+
+nine.addEventListener('click', (e) => {
+    screen.insertAdjacentHTML("beforeend", e.target.innerHTML)
+})
+
+clear.addEventListener('click', (e) => {
+    screen.write('12')
 })
 
 
-function print() {
-    this.addEventListener('click', () => {
 
+
+function print() {
+    this.addEventListener('click', (e) => {
+        return console.log(e.target.innerHTML)
     })
 }
 
