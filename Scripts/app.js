@@ -5,8 +5,9 @@
 // }
 
 // stringHandler('Harley davidson')
-
+// const numberz = screen.textContent
 const screen = document.querySelector('.calc_screen')
+
 
 const zero = document.querySelector('#zero')
 const one = document.querySelector('#one')
@@ -19,14 +20,18 @@ const seven = document.querySelector('#seven')
 const eight = document.querySelector('#eight')
 const nine = document.querySelector('#nine')
 
+
+
 const plus = document.querySelector('#plus')
 const minus = document.querySelector('#minus')
 const multiply = document.querySelector('#mult')
 const del = document.querySelector('#razdel')
 const clear = document.querySelector('#clear')
 
+
 zero.addEventListener('click', (e) => {
     screen.insertAdjacentHTML("beforeend", e.target.innerHTML)
+    screenHandler()
 })
 
 one.addEventListener('click', (e) => {
@@ -65,11 +70,25 @@ nine.addEventListener('click', (e) => {
     screen.insertAdjacentHTML("beforeend", e.target.innerHTML)
 })
 
-clear.addEventListener('click', (e) => {
-    screen.write('12')
+
+plus.addEventListener('click', function () {
+    let x = screen.textContent.split('')
+    let numbersResult = x.filter(x => {
+        if (Number(x) >= 0 && Number(x) <= 9) {
+            console.log(x.join(numbersResult))
+        }
+    })
+    console.log(x)
+    console.log(numbersResult)
 })
 
 
+
+
+
+clear.addEventListener('click', (e) => {
+    screen.textContent = ''
+})
 
 
 function print() {
@@ -100,6 +119,10 @@ function spl(word) {
         result.push(1)
         console.log(result.join(''))
     }
+}
+
+function screenHandler() {
+    console.log(screen.valueOf())
 }
 
 

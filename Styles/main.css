@@ -9,6 +9,7 @@ body {
     justify-content: center;
 }
 .calc {
+    margin-top: 200px;
     background: whitesmoke;
     width: 300px;
     height: 420px;
@@ -16,6 +17,9 @@ body {
 }
 
 .calc_screen {
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
     margin: 10px;
     background: red;
     width: 280px;
@@ -25,6 +29,7 @@ body {
 
 .calc_btns {
     width: 100%;
+    height: 300px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
